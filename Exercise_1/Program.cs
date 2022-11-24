@@ -9,12 +9,17 @@ void WhichIsBigger(int a, int b)
     if (a > b)
     {
         max = a;
+        Console.WriteLine($"a = {a}; b = {b} ->  max = {max}");
+    }
+    else if (b > a)
+    {
+        max = b;
+        Console.WriteLine($"a = {a}; b = {b} ->  max = {max}");
     }
     else
     {
-        max = b;
+        Console.WriteLine("a = b");
     }
-    Console.WriteLine($"a = {a}; b = {b} ->  max = {max}");
 }
 
 
